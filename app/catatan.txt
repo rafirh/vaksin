@@ -1,0 +1,6 @@
+Alur pendaftaran vaksin : 1. Membuat akun
+                          2. Login
+                          3. Mendaftar vaksin dengan melengkapi data yang tertera
+                          4. Siswa akan mendapatkan nomor antrian
+                          5. Tersedia jadwal berdasarkan no. antrian
+                          6. Siswa dapat membatalkan pendaftaran vaksinasi

@@ -1,0 +1,12 @@
+.table td{
+    font-size: medium;
+}
+.warna{
+    background-color: rgb(194, 194, 194);
+}
+.bg-sukses{
+    background-color: rgb(103, 240, 78);
+}
+.font-warna{
+    color: white;
+}
