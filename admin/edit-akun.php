@@ -1,4 +1,9 @@
 <?php
+    session_start();  
+  
+    if($_SESSION['status_admin']!=true){
+      header('Location: ../login.php');
+    }
     include "../conn.php";
     $id_akun=$_GET['id_akun'];
     $qry = mysqli_query($conn, "select * from akun where id = '".$id_akun."'");

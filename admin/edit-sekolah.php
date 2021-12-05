@@ -1,4 +1,9 @@
 <?php
+    session_start();  
+  
+    if($_SESSION['status_admin']!=true){
+      header('Location: ../login.php');
+    }
     include "../conn.php";
     $id_sch=$_GET['id_sekolah'];
     $qry = mysqli_query($conn, "select * from sekolah where id_sekolah = '".$id_sch."'");

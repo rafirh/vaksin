@@ -1,4 +1,9 @@
 <?php 
+    session_start();  
+  
+    if($_SESSION['status_admin']!=true){
+      header('Location: ../login.php');
+    }
     if($_GET['id_jadwal']){
         include "../conn.php";
         $qry_hapus=mysqli_query($conn,"delete from jadwal where id_jadwal='".$_GET['id_jadwal']."'");

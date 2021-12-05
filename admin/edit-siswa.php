@@ -1,4 +1,9 @@
 <?php
+    session_start();  
+  
+    if($_SESSION['status_admin']!=true){
+      header('Location: ../login.php');
+    }
     include "../conn.php";
     $id_siswa=$_GET['id_siswa'];
     $qry = mysqli_query($conn, "select * from siswa inner join sekolah on siswa.id_sekolah = sekolah.id_sekolah where id_siswa = '".$id_siswa."'");

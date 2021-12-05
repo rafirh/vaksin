@@ -13,7 +13,12 @@ Coded by www.creative-tim.com
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 -->
-
+<?php
+    session_start();  
+    if($_SESSION['status_admin']!=true){
+        header('Location: ../login.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 

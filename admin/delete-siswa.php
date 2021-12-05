@@ -1,4 +1,9 @@
 <?php 
+    session_start();  
+  
+    if($_SESSION['status_admin']!=true){
+      header('Location: ../login.php');
+    }
     if($_GET['id_siswa']){
         include "../conn.php";
         $qry_hapus=mysqli_query($conn,"delete from siswa where id_siswa='".$_GET['id_siswa']."'");

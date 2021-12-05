@@ -1,4 +1,9 @@
 <?php
+    session_start();  
+  
+    if($_SESSION['status_admin']!=true){
+      header('Location: ../login.php');
+    }
     include "../conn.php";
     $id_jadwal=$_GET['id_jadwal'];
     $qry = mysqli_query($conn, "select * from jadwal where id_jadwal = '".$id_jadwal."'");

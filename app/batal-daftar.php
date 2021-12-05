@@ -1,4 +1,8 @@
 <?php
+    session_start();  
+    if($_SESSION['login']!=true){
+      header('Location: ../login.php');
+    }
     include '../conn.php';
     $email = $_POST['email_siswa'];
     $validasi = $_POST['valid'];
