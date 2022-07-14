@@ -143,7 +143,7 @@ Coded by www.creative-tim.com
                     </div>
                     <div class="card-body">
                     <div class="table-responsive">
-                        <table class="table">
+                        <table class="table" style="white-space: nowrap">
                             <?php
                             include '../conn.php';
                                 $tampil = mysqli_query($conn, "select * from sekolah order by id_sekolah");

@@ -142,7 +142,7 @@ Coded by www.creative-tim.com
                             <h4 class="card-title">Tabel Jadwal</h4>
                         </div>
                         <div class="card-body">
-                            <div class="table-responsive">
+                            <div class="table-responsive" style="white-space: nowrap">
                                 <table class="table">
                                     <?php
                                     include '../conn.php';
