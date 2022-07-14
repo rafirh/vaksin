@@ -2,7 +2,7 @@
     session_start();  
   
     if($_SESSION['status_admin']!=true){
-      header('Location: ../login.php');
+      header('Location: ../index.php');
     }
     include "../conn.php";
     $id_jadwal=$_GET['id_jadwal'];

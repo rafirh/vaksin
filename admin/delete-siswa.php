@@ -2,7 +2,7 @@
     session_start();  
   
     if($_SESSION['status_admin']!=true){
-      header('Location: ../login.php');
+      header('Location: ../index.php');
     }
     if($_GET['id_siswa']){
         include "../conn.php";

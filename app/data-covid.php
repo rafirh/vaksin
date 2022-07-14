@@ -2,7 +2,7 @@
     session_start();  
   
     if($_SESSION['login']!=true){
-      header('Location: ../login.php');
+      header('Location: ../index.php');
     }
     $api = file_get_contents("https://api.kawalcorona.com/indonesia/");
     $data_corona = json_decode($api, true);

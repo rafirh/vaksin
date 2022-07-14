@@ -80,7 +80,7 @@
 							Sudah punya akun ?
 						</span>
 
-						<a class="txt1 bo1 hov1" href="login.php">
+						<a class="txt1 bo1 hov1" href="index.php">
 							Login sekarang							
 						</a>
 					</div>
@@ -124,7 +124,7 @@
                 title: 'Added success',
                 text: 'Go to the login page to login !'})
 				setTimeout(function(){ 
-					window.location.href = 'login.php';
+					window.location.href = 'index.php';
 				}, 3000);
                 </script>";
             }else{

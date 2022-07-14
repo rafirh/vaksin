@@ -3,7 +3,7 @@
   session_start();  
   
   if($_SESSION['login']!=true){
-    header('Location: ../login.php');
+    header('Location: ../index.php');
   }
   include '../conn.php';
 
@@ -150,7 +150,7 @@
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
-                            <table class="table">
+                            <table class="table" style="white-space: nowrap">
                                 <?php
                                 include '../conn.php';
                                     $tampil = mysqli_query($conn, "select * from jadwal");

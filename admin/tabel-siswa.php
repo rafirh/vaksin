@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
   include '../conn.php';
   session_start();
   if($_SESSION['status_admin']!=true){
-    header('Location: ../login.php');
+    header('Location: ../index.php');
   }
   $query = mysqli_query($conn, "select * from siswa inner join sekolah on siswa.id_sekolah = sekolah.id_sekolah");
   
@@ -144,7 +144,7 @@ Coded by www.creative-tim.com
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
-                    <table class="table">
+                    <table class="table" style="white-space: nowrap">
                       <thead class="text-primary">
                           <th>No.</th>
                           <th>NIS</th>
@@ -170,7 +170,7 @@ Coded by www.creative-tim.com
                           <td><?=$data_siswa['kelamin']?></td>
                           <td><?=$data_siswa['nama_sekolah']?></td>
                           <td style="text-align:center">
-                            <a href="edit-siswa.php?id_siswa=<?=$data_siswa['id_siswa']?>" class="btn btn-success btn-round">Ubah</a> |
+                            <a href="edit-siswa.php?id_siswa=<?=$data_siswa['id_siswa']?>" class="btn btn-success btn-round">Ubah</a>
                             <a href="delete-siswa.php?id_siswa=<?=$data_siswa['id_siswa']?>" class="btn btn-danger btn-round" onclick="return confirm('Apakah anda yakin menghapus data ini?')">Hapus</a>
                           </td>
                         </tr>

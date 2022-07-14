@@ -1,7 +1,7 @@
 <?php
     session_start();  
     if($_SESSION['login']!=true){
-      header('Location: ../login.php');
+      header('Location: ../index.php');
     }
     include '../conn.php';
     $email = $_POST['email_siswa'];

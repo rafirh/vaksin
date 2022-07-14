@@ -3,7 +3,7 @@
   session_start();  
   
   if($_SESSION['login']!=true){
-    header('Location: ../login.php');
+    header('Location: ../index.php');
   }
   $id_akun=$_SESSION['id_akun'];
   include '../conn.php';
